@@ -22,7 +22,7 @@ Pasé de desarrollar aplicaciones nativas en iOS (Objective-C/Swift) en 2010 a t
 *   2024-Presente:** Enfocado en Agentic Workflows y optimización de inferencia LLM.
 *   2010-2020:** Desarrollo de Apps Móviles y Backend Enterprise (Java/PHP/Python).
 
-# 🛠️ Herramientas que uso a diario
+# 🛠️ Herramientas que he usado para llegar hasta aquí
 ![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript) ![Python](https://img.shields.io/badge/Python-yellow?logo=python) ![Rust](https://img.shields.io/badge/Rust-orange?logo=rust) ![Docker](https://img.shields.io/badge/Docker-blue?logo=docker)
 
-[Ver mi historial completo de contribuciones](https://github.com/netmarti?tab=repositories&type=forked]
+[Ver mi historial completo de contribuciones][https://github.com/netmarti?tab=repositories&type=forked]
