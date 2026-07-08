@@ -1,0 +1,39 @@
+name: Weekly Growth Reminder
+
+on:
+  schedule:
+    # Runs every Monday at 9:00 AM UTC (2PM Barcelona time)
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  create-weekly-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Create Weekly Task Comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: 1
+          body: |
+            ## 📅 Semana de Crecimiento Iniciada
+            
+            Hola @netmarti! Es tiempo de tu chequeo semanal. 
+            
+            ### ✅ Checklist Rápido (15 min máx):
+            
+            - [ ] Revisar contribuciones de la semana pasada
+            - [ ] Generar al menos 1 commit visible (cualquier repo)
+            - [ ] Actualizar GROWTH-TRACKER.md con resultados
+            
+            ### 💡 Tareas Sugeridas Hoy:
+            - Corrección de typo en README
+            - Añadir pequeño feature a un proyecto estrella
+            - Abre un Issue en uno de tus 6 repos destacados
+            
+            _Mantén el momentum fuerte! 💪🚀_\n\n_P.S. Si no completas esta semana, configura recordatorio para próxima._
+
+      - name: Log Execution Time
+        run: echo "Weekly growth bot executed successfully at $(date)"
